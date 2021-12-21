@@ -1,0 +1,181 @@
+html, body
+{
+    height: 150%;
+    margin: 0 0;
+    padding: 0 0;
+}
+.screen
+{
+    display: flex;
+    height: 100%;
+    width: 100;
+    background-color: antiquewhite;
+    flex-wrap: wrap;
+}
+.menu_left, .logo, menu_right, menu_button, drop_menu, dropmenu_button_1, dropmenu_button_2, dropmenu_button_3, dropmenu_button_4, .content_border, .container
+{
+    display: flex;
+}
+.menu_left
+{
+    background-color: pink;
+    height: 6%;
+    width: 30%;
+    align-items: center;
+}
+.logo 
+{
+    height: 90%;
+    width: 12vw;
+    background-color: gray;
+    margin: 0 0 0 1%;
+    font-size: 2em;
+    justify-content: center;
+    align-items: center;
+}
+.menu_right
+{
+    background-color: pink;
+    height: 6%;
+    width: 70%;
+    position: relative;
+}
+.menu_button
+{
+    height: 4vw;
+    width: 9vw;
+    background-color: orange;
+    position: absolute;
+    bottom: 10px;
+    overflow: visible;
+}
+.menu_button:nth-of-type(1)
+{
+    left: 30vw;
+}
+.menu_button:nth-of-type(2)
+{
+    left: 40vw;
+}
+.menu_button:nth-of-type(3)
+{
+    left: 50vw;
+}
+.menu_button:nth-of-type(4)
+{
+    left: 60vw;
+}
+.drop_menu_1, .drop_menu_2, .drop_menu_3, .drop_menu_4
+{
+    height: 4vw;
+    width: 9vw;
+    /*background-color: deeppink;*/
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-evenly;
+    top: 0;
+    overflow: hidden;
+}
+.drop_menu_1:hover, .drop_menu_2:hover, .drop_menu_3:hover, .drop_menu_4:hover
+{
+    height: 20vw;
+}
+.dropmenu_button_1, .dropmenu_button_2, .dropmenu_button_3, .dropmenu_button_4
+{
+    height: 4vw;
+    width: 9vw;
+    background-color: orange;
+    margin: 3px 0;
+}
+.dropmenu_button_1:nth-of-type(1), .dropmenu_button_2:nth-of-type(1), .dropmenu_button_3:nth-of-type(1), .dropmenu_button_4:nth-of-type(1)
+{
+    visibility: hidden;
+    z-index: -1;
+}
+.side_menu
+{
+    display: flex;
+    height: 4vw;
+    width: 4vw;
+    background-color: orange;
+    position: absolute;
+    bottom: 10px;
+    right: 1vw;
+    overflow: visible;
+    visibility: hidden;
+    font-size: 6vw;
+    justify-content: center;
+    align-items: center;
+}
+.sidedown_menu
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 4vw;
+    width: 4vw;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*background-color: green;*/
+    opacity: 0;
+    font-size: 2vw;
+    overflow: hidden;
+}
+.sidedown_menu:hover
+{
+    height: 19vw;
+    width: 16vw;
+    opacity: 1;
+    transition: 0.5s;
+    overflow: visible;
+}
+.side_menu_button_1, .side_menu_button_2, .side_menu_button_3, .side_menu_button_4
+{
+    height: 4vw;
+    width: 9vw;
+    background-color: orange;
+    position: relative;
+}
+.second_menu_1, .second_menu_2, .second_menu_3, .second_menu_4
+{
+    display: flex;
+    height: 4vw;
+    width: 8vw;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    right: 0;
+    /*background-color: cornflowerblue;*/
+    opacity: 0;
+}
+.second_menu_1:hover, .second_menu_2:hover, .second_menu_3:hover, .second_menu_4:hover
+{
+    height: 17vw;
+    width: 19vw;
+    opacity: 1;
+    transition: 0.5s;
+}
+.sub_menu_1, .sub_menu_2, .sub_menu_3, .sub_menu_4
+{
+    display: flex;
+    height: 4vw;
+    width: 9vw;
+    justify-content: center;
+    align-items: center;
+    background-color: orange;
+    margin: 3px 0
+}
+@media (max-width: 800px)
+{
+    .side_menu
+    {
+        visibility: visible;
+        height: 6vw;
+        width: 6vw;
+    }
+    .menu_button
+    {
+        visibility: hidden;
+    }
+}
