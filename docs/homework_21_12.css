@@ -12,6 +12,10 @@ html, body
     background-color: antiquewhite;
     flex-wrap: wrap;
 }
+a
+{
+    text-docoretion: none;
+}
 .menu_left, .logo, menu_right, menu_button, drop_menu, dropmenu_button_1, dropmenu_button_2, dropmenu_button_3, dropmenu_button_4, .content_border, .container
 {
     display: flex;
